@@ -1,0 +1,6 @@
+TEST=Hello from prod
+SITE_URL=https://thepressreview.com
+STRIPE_API_KEY=
+SES_API_KEY=
+SES_API_SECRET=
+EMAIL_FROM=The Press Review <inbox@thepressreview.com>

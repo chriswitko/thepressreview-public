@@ -1,0 +1,6 @@
+TEST=Hello from dev
+SITE_URL=http://localhost:3000
+STRIPE_API_KEY=
+SES_API_KEY=
+SES_API_SECRET=
+EMAIL_FROM=The Press Review <inbox@thepressreview.com>

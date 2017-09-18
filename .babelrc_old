@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "next/babel",
+    "stage-2",
+    "es2015",
+    "jest",
+    "react",
+    "./babel-preset"
+  ],
+  "plugins": [
+    ["transform-define", "./src/env-config.js"]
+  ],
+  "env": {
+    "development": {
+      "plugins": ["inline-dotenv"]
+    },
+    "production": {
+      "plugins": ["transform-inline-environment-variables", "transform-css-import-to-string"]
+    }
+  }
+}

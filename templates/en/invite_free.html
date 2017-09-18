@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <?- include('partials/head.html') ?>
+  <body bgcolor="f1f1f1" style="background-color: #f1f1f1; margin: 0px; padding: 20px">
+    <table align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" class="main" style="border-collapse: separate; border-spacing: 0; font-family: HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: 0; table-layout: fixed" width="595">
+      <tbody>
+        <tr>
+          <td class="main-td" style="border-radius: 2px; box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1); font-family: Helvetica, Arial, sans-serif; font-size: 16px; padding: 30px 35px 40px">
+            <?- include('partials/logo.html') ?>
+
+            <table class="content" style="border-collapse: separate; border-spacing: 0; table-layout: fixed" width="100%">
+              <tbody>
+                <tr>
+                  <td class="content-td" style="color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 22px; padding: 0">
+                    <p align="left" class="intercom-align-left" style="line-height: 1.5; margin: 0 0 17px; text-align: left !important">Hi there,</p>
+                    <p align="left" class="intercom-align-left" style="line-height: 1.5; margin: 0 0 17px; text-align: left !important">Your friend <a href='mailto:<%- data.fromEmail %>'><%- data.fromFullname || data.fromEmail %></a> invited you to the The Press Review - daily press review delivered to your inbox.</p>
+                    <%if (data.personalMessage.length > 0) { %>
+                    <p align="left" class="intercom-align-left" style="line-height: 1.5; margin: 0 0 17px; text-align: left !important">&mdash; <i><%- data.personalMessage %></i></p>
+                    <% } %>
+                    <div align="left" class="intercom-container intercom-align-left" style="margin-bottom: 16px; text-align: left !important"><a class="intercom-h2b-button" href="<%- websiteUrl %>/?ref=invite" style="background-color: #3CB371; border: none; border-radius: 3px; color: #FFF; display: inline-block; font-size: 14px; font-weight: bold; outline: none !important; padding: 12px 35px; text-decoration: none" target="_blank">Join The Press Review</a></div>
+                    <p align="left" class="intercom-align-left" style="line-height: 1.5; margin: 0 0 17px; text-align: left !important">Click the button above or copy and paste the given url in your web browser:</p>
+                    <p align="left" class="intercom-align-left" style="line-height: 1.5; margin: 0 0 17px; text-align: left !important"><%- websiteUrl %>/?ref=invite</p>
+                    <p align="left" class="intercom-align-left" style="line-height: 1.5; margin: 0 0 17px; text-align: left !important"><br>Remember! Your invitation will expire in 24 hours.</p>
+                    <p align="left" class="intercom-align-left" style="line-height: 1.5; margin: 0 0 17px; text-align: left !important"><i>- Chris</i></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <?- include('partials/footer.html') ?>
+    <img alt="" border="0" height="1" src="https://www.google-analytics.com/collect?v=1&tid=UA-104622151-1&t=event&cid=<%- data.subscriber._id%t=event&ec=email&ea=invite_free" style="visibility:hidden !important;display:block !important;height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;-ms-interpolation-mode:bicubic;line-height:100%;outline-style:none;text-decoration:none;" width="1">
+  </body>
+</html>
